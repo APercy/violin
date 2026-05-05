@@ -1,28 +1,28 @@
 local S = violin.S
 
-local sol_chord = {"247399__mtg__overall-quality-of-single-note-violin-g3",
-                    "247401__mtg__overall-quality-of-single-note-violin-a3",
-                    "247402__mtg__overall-quality-of-single-note-violin-b3",
-                    "247404__mtg__overall-quality-of-single-note-violin-c4",
-                    "247406__mtg__overall-quality-of-single-note-violin-d4"}
+local sol_chord = {"355775__mtg__violin-g3",
+                    "355826__mtg__violin-a3",
+                    "355812__mtg__violin-b3",
+                    "355808__mtg__violin-c4",
+                    "355796__mtg__violin-d4"}
 
-local re_chord = {"247405__mtg__overall-quality-of-single-note-violin-d4",
-                    "247407__mtg__overall-quality-of-single-note-violin-e4",
-                    "247408__mtg__overall-quality-of-single-note-violin-f4",
-                    "247430__mtg__overall-quality-of-single-note-violin-g4",
-                    "247410__mtg__overall-quality-of-single-note-violin-a4"}
+local re_chord = {"356048__mtg__violin-d4",
+                    "355976__mtg__violin-e4",
+                    "356076__mtg__violin-fsharp4",
+                    "355787__mtg__violin-g4",
+                    "356075__mtg__violin-a4"}
 
-local la_chord = {"247409__mtg__overall-quality-of-single-note-violin-a4",
-                    "247411__mtg__overall-quality-of-single-note-violin-b4",
-                    "247412__mtg__overall-quality-of-single-note-violin-c5",
-                    "247413__mtg__overall-quality-of-single-note-violin-d5",
-                    "247415__mtg__overall-quality-of-single-note-violin-e5"}
+local la_chord = {"356180__mtg__violin-a4",
+                    "356168__mtg__violin-b4",
+                    "355829__mtg__violin-csharp5",
+                    "355769__mtg__violin-d5",
+                    "356026__mtg__violin-e5"}
 
-local mi_chord = {"247415__mtg__overall-quality-of-single-note-violin-e5",
-                    "247416__mtg__overall-quality-of-single-note-violin-f5",
-                    "247417__mtg__overall-quality-of-single-note-violin-g5",
-                    "247419__mtg__overall-quality-of-single-note-violin-a5",
-                    "247447__mtg__overall-quality-of-single-note-violin-b5"}
+local mi_chord = {"355830__mtg__violin-e5",
+                    "355878__mtg__violin-fsharp5",
+                    "355823__mtg__violin-gsharp5",
+                    "356137__mtg__violin-a5",
+                    "355900__mtg__violin-b5"}
 
 
 
