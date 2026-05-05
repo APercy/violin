@@ -111,7 +111,10 @@ function violin.equip(player)
         if ent then
 		    violin:set_yaw(player:get_look_horizontal())
 
-            local violin_height = 14 --13
+            local violin_height = 13
+            if core.get_modpath("3d_armor") then
+                violin_height = 14
+            end
             violin:set_attach(player, "", {x = -4.2, y = violin_height, z = 2}, {x = 0, y = 20, z = 0})
 
             player:set_bone_override("Head", {rotation = {vec = {x=0, y=math.rad(-60), z=0}, absolute = true}})
