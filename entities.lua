@@ -111,10 +111,14 @@ function violin.equip(player)
         if ent then
 		    violin:set_yaw(player:get_look_horizontal())
 
-            violin:set_attach(player, "", {x = -4.2, y = 13, z = 2}, {x = 0, y = 20, z = 0})
+            local violin_height = 14 --13
+            violin:set_attach(player, "", {x = -4.2, y = violin_height, z = 2}, {x = 0, y = 20, z = 0})
 
             player:set_bone_override("Head", {rotation = {vec = {x=0, y=math.rad(-60), z=0}, absolute = true}})
             player:set_bone_override("Arm_Left", {rotation = {vec = {x=math.rad(-30), y=0, z=math.rad(-95)}, absolute = true}})
+            player:set_bone_override("Leg_Left", {rotation = {vec = {x=math.rad(180), y=0, z=0}, absolute = true}})
+            player:set_bone_override("Leg_Right", {rotation = {vec = {x=math.rad(180), y=0, z=0}, absolute = true}})
+            player:set_bone_override("Body", {rotation = {vec = {x=0, y=math.rad(180), z=0}, absolute = true}})
             player:set_physics_override({speed = 0,})
             ent.violin = violin
 
@@ -174,6 +178,9 @@ core.register_entity('violin:instrument',{
             self.violin:remove()
             player:set_bone_override("Head", nil)
             player:set_bone_override("Arm_Left", nil)
+            player:set_bone_override("Leg_Left", nil)
+            player:set_bone_override("Leg_Right", nil)
+            player:set_bone_override("Body", nil)
             player:set_physics_override({speed = 1,})
             violin.remove_hud(player)
 
